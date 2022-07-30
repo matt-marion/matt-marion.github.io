@@ -126,7 +126,7 @@ img {
 }
 
 #finished-code {
-    height: 20px;
+    height: 15px;
 }
 
 #exit-visual-builder {
@@ -153,3 +153,8 @@ h2 {
 #editing-an-image {
     margin-bottom: -20px;
 }
+
+#wordpress-builder {
+    margin-top: 90px;
+}
+
