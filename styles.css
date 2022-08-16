@@ -4,7 +4,6 @@ html {
   
   #main-doc {
     margin-left: 275px;
-    padding-top: 12px;
     max-width: 700px;
   }
   
@@ -13,6 +12,9 @@ html {
     font-family: noto-sans, sans-serif;
     font-style: normal;
     font-weight: 100;
+    box-sizing: border-box;
+
+    /*border: 1px solid orange; */
   }
   
  header {
@@ -27,18 +29,20 @@ html {
     margin-bottom: 75px;
   }
  
-  #navbar > header {
-    text-align: center;
-   padding-bottom: 25px;
-    font-size: 25px;
-    font-weight: 20;
-    margin-top: 25px;
+  #logo {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
     border-style: solid;
-    border-width: 0;
+    border-width: 0 0 2px 0;
+    border-color: rgb(88 185 158);
   }
   
   #navbar {
-  height: 100%;
+    height: 100%;
     width: 250px;
     position: fixed;
     z-index: 1;
@@ -46,9 +50,10 @@ html {
     left: 0;
     overflow-x: hidden;
     border-style: solid;
-    border-width: 0 1px 0 0;
-    border-color: GhostWhite;
+    border-width: 1px 1px 0 0;
+    border-color: rgb(88 185 158);
     background: rgb(41 42 54);
+    margin-top: 0;
     
   }
 
@@ -60,6 +65,12 @@ html {
     display: block;
     transition: 0.3s;
     border-style: none;
+    position: relative;
+    top: 250px;
+  }
+  
+  .nav-link:first-of-type {
+    margin-top: 0;
   }
   
   a:hover {
@@ -158,3 +169,74 @@ h2 {
     margin-top: 90px;
 }
 
+p {
+  letter-spacing: 0.5px;
+}
+
+.social-icons {
+  padding: 20px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-github {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin-in {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.matt-marion {
+  font-size: 40px;
+  font-weight: 125;
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-color:rgb(88 185 158);
+}
+
+.text-header {
+  font-size: 25px;
+  padding-top: 0;
+  margin-top: 45px;
+  position: absolute;
+  left: 85px;
+}
+
+#top-nav {
+  width: 100%;
+  height: 100%;
+  margin-bottom;
+  padding: 0;
+  border-style: solid;
+  border-width: 0;
+  background: rgb(41 42 54);
+  position: absolute;
+  
+}
+
+.technical-writer {
+ 
+  position: absolute;
+  width: auto;
+}
+
+#top-nav-bar {
+  height: 150px;
+  width: 100%;
+  position: fixed;
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-color: rgb(88 185 158);
+  background: rgb(41 42 54);
+  left: 200px;
+  margin: 0;
+  padding: 0;
+  top:-20px;
+  z-index: 1;
+}
