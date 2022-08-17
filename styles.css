@@ -80,10 +80,6 @@ html {
     position: relative;
     top: 250px;
   }
-
-  .nav-link:after {
-    
-  }
   
   .nav-link:first-of-type {
     margin-top: 0;
